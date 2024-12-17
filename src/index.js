@@ -2,11 +2,32 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import {
+  createBrowserRouter,
+  RouterProvider
+} from "react-router-dom";
+import { About } from './Components/About';
+import { Homepage } from './Components/Homepage';
+
+let router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Homepage />
+  },
+  {
+    path: "/about",
+    element: <About />
+  },
+  {
+    path: '/services',
+    element: <Services />
+  }
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
