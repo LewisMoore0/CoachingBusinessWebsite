@@ -6,9 +6,10 @@ import {
   createBrowserRouter,
   RouterProvider
 } from "react-router-dom";
-import { About } from './Components/About';
-import { Homepage } from './Components/Homepage';
-import { Services } from './Components/Services';
+import { About } from './Pages/About.js';
+import { NavBar } from './Components/NavBar.js';
+import { Services } from './Pages/Services.js';
+import { Homepage } from './Pages/Homepage.js';
 
 let router = createBrowserRouter([
   {
@@ -28,6 +29,7 @@ let router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <NavBar />
     <RouterProvider router={router} />
   </React.StrictMode>
 );
