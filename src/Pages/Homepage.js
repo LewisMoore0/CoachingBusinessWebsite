@@ -1,5 +1,9 @@
+import { HeroImage } from "../Components/HeroImage"
+
 export const Homepage = () => {
+    // hero image
+
     return ( 
-        <p> This is the homepage </p>
+        <HeroImage />
     )
 }

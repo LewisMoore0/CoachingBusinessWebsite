@@ -4,14 +4,16 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Button, Link, MenuItem } from '@mui/material';
+import LogoImage from '../images/file.png'
 
 export function NavBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ p:1 }}>
+      <AppBar position="static" sx={{ p:1, backgroundColor: '#3a3c3d' }}>
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <img src={LogoImage} height={100} width={100}/>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1, pl: 1 }}>
             <Link underline='none' color='inherit' href='/'>  Coaching Business Name </Link>
           </Typography>
           <Link color='inherit' underline="none" href='/' sx={{ p:1 }}>Home</Link>
