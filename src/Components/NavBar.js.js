@@ -9,10 +9,10 @@ export function NavBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" sx={{ p:1 }}>
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <Link underline='none' color='inherit' href='/'> LewisMooreDev </Link>
+            <Link underline='none' color='inherit' href='/'>  Coaching Business Name </Link>
           </Typography>
           <Link color='inherit' underline="none" href='/' sx={{ p:1 }}>Home</Link>
           <Link color='inherit' underline="none" href='/about' sx={{ p:1 }}>About</Link>
